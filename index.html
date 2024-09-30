@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+
+    <!-- Form to add images -->
+    <form id="image-form">
+        <input type="text" id="image-url" placeholder="Image URL" required>
+        <input type="text" id="image-caption" placeholder="Image Caption" required>
+        <button type="submit">Add Image</button>
+    </form>
+
+    <!-- Gallery items -->
+    <div id="gallery" class="gallery"></div>
+
+    <!-- Modal for viewing enlarged images -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+        <button id="edit-image">Edit</button>
+        <button id="delete-image">Delete</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
